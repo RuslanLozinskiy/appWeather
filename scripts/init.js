@@ -14,9 +14,9 @@ function searchWeather() {
     http.onreadystatechange = function () {
         if (http.readyState == XMLHttpRequest.DONE && http.status === 200){
             let data = JSON.parse(http.responseText);
-        let weatherData = new WeatherData(cityName, data.weather[0].description.toUpperCase);
+        let weatherData = new WeatherData(cityName, data.weather[0].description);
         weatherData._temperature = data.main.temp;
-        console.log(weatherData);
+     showWeatherInBox(weatherData);
         
         
     } else if (http.readyState == XMLHttpRequest.DONE) {
@@ -24,4 +24,12 @@ function searchWeather() {
     }
     }
     http.send();
+}
+
+function showWeatherInBox(WeatherData) {
+    getShowWeatherNameCity.textContent = "City: " + WeatherData.cityName;
+    getShowWeatherTemperature.textContent = "Temperature " + WeatherData._temperature;
+    getShowWeatherNameCity.textContent = "precipitation " + WeatherData.description;
+
+
 }

@@ -6,15 +6,19 @@
 
 .header {
     text-align: center;
-    background-color: aqua;
+    background-color: yellow;
     width: 500px;
     height: 200px;
 }
 
-.input {
-    background-color: aquamarine;
+.container {
+    background-color: blue;
     width: 500px;
     height: 300px;
     text-align: center;
-   
+    color: yellow;
+  
+}
+.sWeather {
+    font-size: 200%;
 }
