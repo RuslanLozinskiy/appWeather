@@ -1,34 +1,36 @@
 body {
-    background-color: black;
-}
-.flex {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    
+    background-image: url(/images/weather-1280x720.jpg);
 }
 
-.header {
-    text-align: center;
-    color: yellow;
-    width: 500px;
-    height: 50px;
-    border: 2px solid gray;
-    border-radius: 40px 40px 0px 0px;
+#box {
+    position: absolute;
+    top: 30%;
+    left: 33%;
+
 }
+
+
 
 .container {
-    border-radius: 0px 0px 40px 40px;
+    border-radius: 40px 40px 40px 40px;
     width: 500px;
     height: 300px;
     text-align: center;
     color: yellow;
-    border: 2px solid gray;
-    
+
+
+
 }
+
 .sWeather {
-    font-size: 200%;
+     font-size: 200%;
+     background: rgba( 0,0,0,.6);
+     width: 400px;
+    margin: 0 auto;
+    color: aliceblue;
+    border-radius: 40px;
 }
+
 #getWeather {
     text-decoration: none;
     background-color: black;
@@ -37,15 +39,18 @@ body {
     border-radius: 20px;
     height: 50px;
     position: fixed;
-   margin-left: auto;
+    margin-left: auto;
     margin-top: 50px;
-    
+    background: rgba(0, 0, 0, .6);
 }
+
 #getNameCity {
     height: 50px;
     width: 300px;
     font-size: 45px;
     margin-left: -100px;
-    margin-top: 50px;;
+    margin-top: 50px;
+    background: rgba(0, 0, 0, .6);
     border-radius: 20px;
+    color: aliceblue;
 }

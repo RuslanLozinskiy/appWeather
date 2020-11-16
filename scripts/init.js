@@ -8,27 +8,27 @@ function searchWeather() {
         return alert('Please enter city NAME');
     }
     let http = new XMLHttpRequest();
-    let url = 'http://api.openweathermap.org/data/2.5/weather?q='+cityName+' &units=metric&appid=' + apiKey;
+    let url = 'http://api.openweathermap.org/data/2.5/weather?q=' + cityName + ' &units=metric&appid=' + apiKey;
     let method = 'GET';
     http.open(method, url);
     http.onreadystatechange = function () {
-        if (http.readyState == XMLHttpRequest.DONE && http.status === 200){
+        if (http.readyState == XMLHttpRequest.DONE && http.status === 200) {
             let data = JSON.parse(http.responseText);
-        let weatherData = new WeatherData(cityName, data.weather[0].description);
-        weatherData._temperature = data.main.temp;
-     showWeatherInBox(weatherData);
-        
-        
-    } else if (http.readyState == XMLHttpRequest.DONE) {
-        alert('WRONG');
-    }
+            let weatherData = new WeatherData(cityName, data.weather[0].description);
+            weatherData._temperature = data.main.temp;
+            showWeatherInBox(weatherData);
+
+
+        } else if (http.readyState == XMLHttpRequest.DONE) {
+            alert('WRONG');
+        }
     }
     http.send();
 }
 
 function showWeatherInBox(WeatherData) {
-    getShowWeatherNameCity.textContent = "City: " + WeatherData.cityName;
-    getShowWeatherTemperature.textContent = "Temperature " + WeatherData._temperature;
+    
+    getShowWeatherTemperature.textContent = "Temperature " + WeatherData._temperature + "°";
     getShowWeatherNameCity.textContent = "precipitation " + WeatherData.description;
 
 
