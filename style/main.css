@@ -1,5 +1,6 @@
 body {
-    background-image: url(/images/weather-1280x720.jpg);
+    background-image: url(https://androidinsider.ru/wp-content/uploads/2020/04/weather-1280x720.jpg);
+    
 }
 
 #box {
@@ -23,9 +24,9 @@ body {
 }
 
 .sWeather {
-     font-size: 200%;
-     background: rgba( 0,0,0,.6);
-     width: 400px;
+    font-size: 200%;
+    background: rgba( 0,0,0,.6);
+    width: 400px;
     margin: 0 auto;
     color: aliceblue;
     border-radius: 40px;
