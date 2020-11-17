@@ -25,7 +25,8 @@ body {
 
 .sWeather {
     font-size: 200%;
-    background: rgba( 0,0,0,.6);
+    background: rgba( 0,0,0,0.4);
+    
     width: 400px;
     margin: 0 auto;
     color: aliceblue;
@@ -42,7 +43,7 @@ body {
     position: fixed;
     margin-left: auto;
     margin-top: 50px;
-    background: rgba(0, 0, 0, .6);
+    background: rgba(0, 0, 0, 0.4);
 }
 
 #getNameCity {
@@ -51,7 +52,7 @@ body {
     font-size: 45px;
     margin-left: -100px;
     margin-top: 50px;
-    background: rgba(0, 0, 0, .6);
+    background: rgba(0, 0, 0, .4);
     border-radius: 20px;
     color: aliceblue;
 }
