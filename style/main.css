@@ -1,6 +1,6 @@
 body {
     background-image: url(https://androidinsider.ru/wp-content/uploads/2020/04/weather-1280x720.jpg);
-    
+  background-size: cover;
 }
 
 #box {
